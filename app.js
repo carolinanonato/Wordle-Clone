@@ -69,13 +69,40 @@ keys.forEach(key => {
 
 const handleClick = (letter) => {
     console.log('clicked', letter)
+    if (letter === "«") {
+        deleteLetter()
+        console.log(guessRows)
+        return
+    } if (letter === 'ENTER') {
+        console.log('check row')
+        console.log(guessRows)
+        return
+    }
     addLetter(letter)
+    console.log(guessRows)
 }
 
 const addLetter = (letter) => {
+    if (currentTile < 5 && currentRow < 6) {
+
+    
     const tile = document.getElementById('guessRow-' + currentRow + '-tile-' + currentTile)
     tile.textContent = letter
+    guessRows[currentRow][currentTile] = letter
+    tile.setAttribute('data', letter)
     currentTile++
 
+   
+    }
+}
 
+
+const deleteLetter = () => {
+    if(currentTile > 0) {
+    currentTile--
+    const tile = document.getElementById('guessRow-' + currentRow + '-tile-' + currentTile)
+    tile.textContent= ''
+    guessRows[currentRow][currentTile] = ''
+    tile.setAttribute('data', '')
+    }
 }
