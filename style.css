@@ -20,6 +20,7 @@ body {
   text-align: center;
   width: 510px;
   border-bottom: solid 1px #3a3a3c;
+  margin-top: 70px;
 }
 
 .tile-container {
@@ -68,4 +69,13 @@ body {
 
 .message-container {
   height: 30px;
+  margin-bottom: 30px;
+}
+
+.message-container p {
+  background-color: #818384;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0;
+  margin-top: 10px;
 }
