@@ -1,0 +1,26 @@
+{
+  "name": "wordle-clone",
+  "version": "1.0.0",
+  "description": "A Wordle clone in JS for for studying purposes!",
+  "main": "app.js",
+  "scripts": {
+    "start:backend" : "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolinanonato/Wordle-Clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carolinanonato/Wordle-Clone/issues"
+  },
+  "homepage": "https://github.com/carolinanonato/Wordle-Clone#readme",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}

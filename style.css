@@ -52,6 +52,10 @@ body {
   width: 68px;
 }
 
+.key-container button:nth-child(28) {
+  font-size: 30px;
+}
+
 .tile-container div {
   display: flex;
 }
